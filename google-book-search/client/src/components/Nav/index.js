@@ -1,19 +1,20 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 function Nav() {
   return (
     <header>
-      <nav class="uk-navbar-container uk-margin" uk-navbar="mode: click">
-        <div class="uk-navbar-left">
-          <ul class="uk-navbar-nav">
-            <li class="uk-active">
-              <a href="/">GOOGLE BOOK SEARCH</a>
+      <nav className="uk-navbar-container uk-margin" uk-navbar="mode: click">
+        <div className="uk-navbar-left">
+          <ul className="uk-navbar-nav">
+            <li className="uk-active">
+              <Link to="/">GOOGLE BOOK SEARCH</Link>
             </li>
             <li>
-              <a href="/">Search</a>
+              <Link to="/">Search</Link>
             </li>
             <li>
-              <a href="/saved">Saved</a>
+              <Link to="/saved">Saved</Link>
             </li>
           </ul>
         </div>
