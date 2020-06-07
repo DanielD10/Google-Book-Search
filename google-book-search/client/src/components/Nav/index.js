@@ -13,7 +13,7 @@ function Nav() {
               <a href="/">Search</a>
             </li>
             <li>
-              <a href="/">Saved</a>
+              <a href="/saved">Saved</a>
             </li>
           </ul>
         </div>
