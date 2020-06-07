@@ -1,9 +1,10 @@
-import React, {useRef} from  "react";
+import React, {useRef, useState} from  "react";
 import Jumbotron from "../components/Jumbotron";
 import axios from "axios";
 import BooksCard from "../components/BooksCard";
 
 function Searched() {
+    const [books, setBooks]= useState([]);
     const bookRef = useRef();
     function bookSearch(e){
         e.preventDefault();
@@ -16,6 +17,8 @@ function Searched() {
         )
             .then((response) => {
                 console.log(response.data.items);
+                setBooks(response.data.items);
+                
                
 
                 // const results = [];
