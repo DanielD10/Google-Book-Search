@@ -17,11 +17,11 @@ function SavedBooks() {
               <BooksCard
                 type="saved"
                 key={book.id}
-                title={book.volumeInfo.title}
-                authors={book.volumeInfo.authors[0]}
-                description={book.volumeInfo.description}
-                imageLinks={book.volumeInfo.imageLinks.smallThumbnail}
-                infoLink={book.volumeInfo.infoLink}
+                title={book.title}
+                authors={book.authors[0]}
+                description={book.description}
+                imageLinks={book.image}
+                infoLink={book.link}
               />
             );
           })
