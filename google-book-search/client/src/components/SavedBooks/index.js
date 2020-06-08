@@ -16,7 +16,8 @@ function SavedBooks() {
             return (
               <BooksCard
                 type="saved"
-                key={book.id}
+                key={book._id}
+                id={book._id}
                 title={book.title}
                 authors={book.authors[0]}
                 description={book.description}

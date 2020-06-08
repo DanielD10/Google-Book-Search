@@ -36,7 +36,7 @@ function BookCard(props) {
             Add
           </button>
         ) : (
-          <button onClick={deleteBook} className="uk-button uk-button-default">Delete</button>
+          <button onClick={() => deleteBook( props.id)} className="uk-button uk-button-default">Delete</button>
         )}
         <div className="uk-card-media-left uk-cover-container">
           <img src={props.imageLinks} alt="" uk-cover="true" />
